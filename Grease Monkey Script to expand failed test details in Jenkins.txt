@@ -1,0 +1,64 @@
+// ==UserScript==
+// @name     Expand / Collapse all failed test details in jenkins
+// @version  1.2
+// @grant    Nobody can guaratnee anything in life
+// author    Boris Ivanov - Grimy88
+// update notes:
+//      - added collapse option also
+//      - fixed styling of button; added round borders
+//      - added check for text to contain Failed Tests and then create button
+// ==/UserScript==
+(function(fn){var d=document;(d.readyState=='loading')?d.addEventListener('DOMContentLoaded',fn):fn();})(function(){
+  function expandDetails(){
+      
+        var expandButton = document.getElementById("expandDetails");
+    
+    var table = document.getElementsByTagName("table")[1].rows;
+    
+    if (expandButton.classList.contains("expand")) {
+      expandButton.className = "collapse";
+      expandButton.innerHTML = "Collapse details";
+        expandButton.title = "Collapse failed tests details";
+      for (var i = 1; i < table.length; i++) {
+        if(i == 1) {
+          table[i].children[0].childNodes[2].click()
+        }
+        table[i].children[0].childNodes[0].click()
+      }   
+    } else {
+      for (var i = 1; i < table.length; i++) {
+        if(i == 1) {
+          table[i].children[0].childNodes[3].click()
+        }
+        table[i].children[0].childNodes[1].click()
+      }
+         expandButton.className = "expand";
+      expandButton.innerHTML = "Expand details";
+        expandButton.title = "Expand failed tests details";
+    }
+  };
+ 
+  if(window.location.href.indexOf("testReport") > -1 && window.location.href.indexOf("jenkins") > -1) {
+    //Add container for our expand button
+    var scriptButton = document.createElement('div');
+    
+    // Position where to place / add our button
+    var position = document.getElementsByTagName("h2")[0];
+    
+    if(position.innerText.includes("Failed Tests")) {
+    
+      // Add style for container where our button is
+      scriptButton.id = 'expand_script_button';
+      scriptButton.style.float = "right";
+      scriptButton.innerHTML = '<button id="expandDetails" style="width: 180px; height: 30px; margin-right: 20px; border-radius: 15px; border: 1px solid black;" title="Expand failed tests details" class="expand">Expand details</button>';
+
+      position.appendChild(scriptButton);
+      var expandButton = document.getElementById("expandDetails");
+      //console.log(expandButton);
+
+      // Add event listener for click on our button
+      expandButton.onclick = function() {expandDetails()};
+    }
+  }
+
+});

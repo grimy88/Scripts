@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SomeName xmlns="SomeName">
+   <Tag1 id="0-1111" id_open="2011-03-11" someattr="3" />
+   <Function id="123" status="close" function="6098" timestamp="2011-03-11">
+      <Response result="successful" />
+   </Function>
+   <Function id="111" status="close" function="6598" timestamp="2011-03-11">
+      <Response result="successful" />
+   </Function>
+   <Function id="333" status="open" function="60" timestamp="2011-03-11">
+      <Response result="successful" />
+   </Function>
+   <Function id="444" status="close" function="6099" timestamp="2011-03-11">
+      <Response result="successful" />
+   </Function>
+   <Function id="555" status="close" function="6599" timestamp="2011-03-11">
+      <Response result="successful" />
+   </Function>
+   <Tag2 id="0-1234" open="2011-03-11" someattr="3" />
+   <Tag3 attr1="1" attr2="84" timestamp="2011-03-11" status="OK" ref="3">
+      <TagV currency="dollar">123654</TagV>
+      <Tag123>
+         <ATag currency="dollar">1100</ATag>
+         <CTag currency="dollar">99</CTag>
+      </Tag123>
+      <Tag4 items="1" issued="1" version="2.0" id="125.2.v.s.1">
+         <Price currency="dollar" attr2="760" price="0">2500</Price>
+         <Details someattr="somevalue">
+            <SomeTag>123456</SomeTag>
+            <SomeTag1>03000</SomeTag1>
+            <SomeTag2>00218</SomeTag2>
+            <SomeTag3>0</SomeTag3>
+            <SameTag value="somevalue1" name="somevalue1" />
+            <SameTag value="somevalue2" name="somevalue2" />
+            <SameTag value="somevalue3" name="somevalue3" />
+            <SameTag value="somevalue4" name="somevalue4" />
+            <SameTag value="2011-03-17" name="somevalue" />
+         </Details>
+      </Tag4>
+   </Tag3>
+   <Tag5 id="0-1234" id_open="2011-03-11" shift_id="3" timestamp="2011-03-11" >
+      <TagLast>
+         <Tag112>
+            <AAmount currency="dollar">2550</AAmount>
+            <CAmount currency="dollar">50</CAmount>
+            <RAmount currency="dollar">0</RAmount>
+            <IAmount currency="dollar">0</IAmount>
+            <OAmount currency="dollar">0</OAmount>
+         </Tag112>
+      </TagLast>
+   </Tag5>
+
+</SomeName>

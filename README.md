@@ -24,3 +24,6 @@ In the xml example you can find all of the noted cases. For the first two cases 
 
 5) Read CSV file in python:
 This is a short script which just reads an .csv file where the user inputs the number of the line or value you want to read from the csv file and afterwards clean (delete) that value from the csv file
+
+6) Change registry on windows using python:
+Change the registry value on Windows you can use this short script to automate the process easily. In this script i have used python 2.4. The user just sends the location of the registry, the name of the registry, its value and type. Since python does not have sufficient permissions on Windows to change the registry we are generating the command line (batch) script which will be executed and after that deleted so that no unnecessary files will stay on the system. In this code snippet we generate a random name for the file which we generate so that it will be unique also we have logs in case something goes wrong. The default location is hard coded but you can change that to your liking or delete it and just send the absolute path to your registry.

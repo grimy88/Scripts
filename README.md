@@ -1,5 +1,5 @@
-# scripts
-Python and batch scripts
+# Python and batch scripts
+
 
 Protractor script:
 Protractor script is used to generate a new project for Protractor.

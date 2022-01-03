@@ -1,0 +1,22 @@
+Script for generating protractor project v0.9
+
+Any improvements or bugs please report to b.ivanov@levi9.com
+
+What this script does?
+This script generates configuration files and additional config files for a fresh newly created protractor project to be used.
+
+▁ ▂ ▄ ▅ ▆ ▇ █ ŖËĻËÄŚË ŅÖȚËŚ BŸ ĠŖÏMŸ88 █ ▇ ▆ ▅ ▄ ▂ ▁
+
+How to use:
+1) Run the script and follow the instructions
+After the script finishes up please do a double check for all the configuration files and versions for libraries since they are hardcoded.
+Enjoy your newly created protractor project!
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Fix for version 0.8:
+- Fixed issue when user does not want to use Jasmine and Chai script fails to finish up.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Fix for version 0.9:
+- Fixed issue when user does not want timeout helper and screenshot helper script does not call NPM INSTALL.
+-----------------------------------------------------------------------------------------------------------------------------------------
+

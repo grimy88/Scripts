@@ -37,3 +37,6 @@ Batch script to set time for windows OS. Dates are hardcoded so just change them
 9) Set_date:
 Set_date is python script used to set date and time on windows OS. Call the function and send parameters for date and for time you want to set.
 
+10) Select_window:
+Select window is a script written in python to select and put up front an application window on windows OS. Regular expression is used to find the appliaction window name.
+

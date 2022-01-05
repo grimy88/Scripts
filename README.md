@@ -34,3 +34,6 @@ This is a script written in javascript for GreaseMonkey plugin in Fire Fox brows
 8) SetTime:
 Batch script to set time for windows OS. Dates are hardcoded so just change them according to your needs. User can choose which date specified is needed to be set.
 
+9) Set_date:
+Set_date is python script used to set date and time on windows OS. Call the function and send parameters for date and for time you want to set.
+

@@ -31,3 +31,6 @@ Change the registry value on Windows you can use this short script to automate t
 7) Grease Monkey Script to expand failed test details in Jenkins:
 This is a script written in javascript for GreaseMonkey plugin in Fire Fox browser. It is used to create a button "Expand Details" on which when the user clicks it will expand the details of all failed test cases that are listed in test results page in Jenkins. Afterwords the button will change to "Collapse Details" on which when clicked all the test details will collapse to show just the test name. I came up with this little handy script just to simplify the boring clicking on each plus sign for the failed tests to check the details, for example if you are working on a big project and there is a big amount of test cases and if lots of them fail then the user will not have to click for each test the test details plus sign.
 
+8) SetTime:
+Batch script to set time for windows OS. Dates are hardcoded so just change them according to your needs. User can choose which date specified is needed to be set.
+

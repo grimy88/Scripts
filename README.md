@@ -20,7 +20,7 @@ We have a couple of cases for which this code is for:
     We search for tag and an attribute inside the tag and check the value of the attribute.
     We search for the tag which has multiple instances with same name so we use one attribute and its value to go through all of the instances to find the one we need, after which we look for the actual attribute we need and check its value.
 
-In the xml example you can find all of the noted cases. For the first two cases you can take any tag you want, for the last case the tag with name "SameTag" or "Function" can be used. 
+    In the xml example you can find all of the noted cases. For the first two cases you can take any tag you want, for the last case the tag with name "SameTag" or "Function" can be used. 
 
 5) Read CSV file in python:
 This is a short script which just reads an .csv file where the user inputs the number of the line or value you want to read from the csv file and afterwards clean (delete) that value from the csv file
